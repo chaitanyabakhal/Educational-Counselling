@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Counselling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Counseling Website</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('members') }}">Our Members</a></li>
+                <li><a href="{{ url_for('feedback') }}">Feedback</a></li>
+                <li><a href="{{ url_for('contactus') }}">Contact Us</a></li>
+                <li><a href="{{ url_for('education') }}">Education Counselling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero hero-edu">
+            <div class="hero-content">
+                <h2>Education Counselling</h2>
+                <p>Personalized guidance for competitive exams and career direction. We help you plan, study smart, and stay motivated to reach your goals.</p>
+                <a href="{{ url_for('feedback') }}" class="btn">Book an Intro Call</a>
+            </div>
+            <div class="hero-media">
+                <img src="https://www.uwa.edu.au/study/-/media/faculties/ems/teasers/software_maj_header-792_x_576.jpg"/>
+            </div>
+        </section>
+
+        <section class="features">
+            <h3>Why Choose Our Counselling?</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">📱</span>
+                    <h4>Easy to Follow</h4>
+                    <p>Simple, structured guidance with weekly goals so you always know what to do next.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h4>Personalized Roadmaps</h4>
+                    <p>Plans tailored to your exam, strengths, and timeline — no one-size-fits-all.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⏱️</span>
+                    <h4>Progress Tracking</h4>
+                    <p>Milestone check-ins and practical trackers to measure improvement and stay accountable.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🧠</span>
+                    <h4>Smart Study Methods</h4>
+                    <p>Evidence-based techniques for retention, revision cycles, and mock analysis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <h3>How Counseling Helps</h3>
+            <p>We combine structured planning, mentorship, and accountability with proven study methods so you move from confusion to clarity and consistent progress.</p>
+        </section>
+
+        <section class="cta">
+            <h3>Ready to begin?</h3>
+            <p>Book a quick intro and explore services tailored to your goals.</p>
+            <a href="{{ url_for('feedback') }}" class="btn">Book Intro Call</a>
+            <a href="{{ url_for('services') }}" class="btn">Explore Services</a>
+        </section>
+
+        <section class="reach-us">
+            <h3>Location & Contact</h3>
+            <p class="address">E 70/28 MIDC Waluj, Ranjangaon shenpunji, Waluj Aurangabd Division ,431136</p>
+            <p class="phone"><a href="tel:+919545394148">+91 9545394148</a></p>
+            <p class="email"><a href="mailto:info@counseling.example">info@counseling.example</a></p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps?q=E%2070/28%20MIDC%20Waluj,%20Ranjangaon%20shenpunji,%20Waluj%20Aurangabd%20Division%20,431136&output=embed" width="100%" height="280" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Counseling Website</p>
+    </footer>
+</body>
+</html>

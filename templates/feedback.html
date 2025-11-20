@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Counseling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Counseling Website</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('members') }}">Our Members</a></li>
+                <li><a href="{{ url_for('feedback') }}">Feedback</a></li>
+                <li><a href="{{ url_for('contactus') }}">Contact Us</a></li>
+                <li><a href="{{ url_for('education') }}">Education Counselling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h3>Feedback</h3>
+            <div class="feedback-banner">
+                <img src="{{ url_for('static', filename='img/feedback-matters.jpg') }}"
+                     alt="Your Feedback Matters"
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop';">
+            </div>
+            <div class="feedback-grid">
+                <div>
+                    <p style="margin-bottom:16px;">We value your feedback! Please let us know your thoughts. Your insights help us improve guidance and services.</p>
+                    {% if error %}
+                        <p style="color: #b00020;">{{ error }}</p>
+                    {% endif %}
+                    {% if success %}
+                        <p style="color: #2e7d32;">{{ success }}</p>
+                    {% endif %}
+                    <form action="{{ url_for('feedback') }}" method="post" class="form-grid">
+                        <input type="text" name="first_name" placeholder="First name" required>
+                        <input type="text" name="last_name" placeholder="Last name" required>
+                        <input type="email" name="email" placeholder="Email" class="full" required>
+                        <textarea name="message" placeholder="Message" class="full" required></textarea>
+                        <button type="submit" class="btn full">Submit Feedback</button>
+                    </form>
+                </div>
+                <div class="feedback-media">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.wDxsgesKKerb1qe3iWk4egHaEy?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=184&h=118&c=7&dpr=1.3&o=7&rm=3" alt="Students giving feedback" />
+                </div>
+            </div>
+        </section>
+        <section class="reach-us">
+            <h3>Location & Contact</h3>
+            <p class="address">E 70/28 MIDC Waluj, Ranjangaon shenpunji, Waluj Aurangabd Division ,431136</p>
+            <p class="phone"><a href="tel:+919545394148">+91 9545394148</a></p>
+            <p class="email"><a href="mailto:info@counseling.example">info@counseling.example</a></p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps?q=E%2070/28%20MIDC%20Waluj,%20Ranjangaon%20shenpunji,%20Waluj%20Aurangabd%20Division%20,431136&output=embed" width="100%" height="280" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Counseling Website</p>
+    </footer>
+</body>
+</html>

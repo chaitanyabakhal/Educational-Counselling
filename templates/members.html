@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Members - Counseling</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <header>
+    <h1>Counseling Website</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('services') }}">Services</a></li>
+        <li><a href="{{ url_for('members') }}">Our Members</a></li>
+        <li><a href="{{ url_for('feedback') }}">Feedback</a></li>
+        <li><a href="{{ url_for('contactus') }}">Contact Us</a></li>
+        <li><a href="{{ url_for('education') }}">Education Counselling</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h3>Edu Counselling Team</h3>
+      <p style="margin-bottom:20px;">
+        Our Edu Counselling Team is a group of dedicated professionals who provide expert guidance for students pursuing Engineering, Medical, and Pharmacy education. 
+        Each team member contributes their experience to help learners achieve academic and career success.
+      </p>
+
+      <!-- Leadership Section -->
+      <h4>Leadership</h4>
+      <div class="members-grid">
+        <div class="member-card">
+          <img class="member-photo" src="https://images.unsplash.com/photo-1529139574466-a303027c2303?q=80&w=1200&auto=format&fit=crop" alt="Sagar Padaswan">
+          <div class="member-name">Sagar Padaswan</div>
+          <div class="member-role">Administrator Head</div>
+          <div class="member-bio">Responsible for overall coordination and management of all counseling operations and academic activities.</div>
+        </div>
+
+        <div class="member-card">
+          <img class="member-photo" src=""C:\Users\manik\OneDrive\Pictures\hello bro\kranti deepak zine.jpg"" alt="Avinash Chavan">
+          <div class="member-name">Avinash Chavan</div>
+          <div class="member-role">Marketing Head</div>
+          <div class="member-bio">Leads the outreach and promotional strategy to connect more students with quality counseling services.</div>
+        </div>
+
+        <div class="member-card">
+          <img class="member-photo" src="C:\Users\manik\OneDrive\Pictures\hello bro" alt="Rohit Pawar">
+          <div class="member-name">Rohit Pawar</div>
+          <div class="member-role">Counselling Team Head</div>
+          <div class="member-bio">Guides all team members and ensures personalized support is delivered to each student efficiently.</div>
+        </div>
+      </div>
+
+      <!-- Engineering Team -->
+      <h4 style="margin-top:30px;">Engineering Team</h4>
+      <div class="members-grid">
+        <div class="member-card">
+          <img class="member-photo" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1200&auto=format&fit=crop" alt="Sunakshi Pawar">
+          <div class="member-name">Sunakshi Pawar</div>
+          <div class="member-role">Head of Engineering Department</div>
+          <div class="member-number"><a href="tel:+917410522804">📞 +91 74105 22804</a></div>
+          <div class="member-bio">Specializes in mentoring engineering aspirants and helps design technical learning pathways.</div>
+        </div>
+
+        <div class="member-card">
+          <img class="member-photo" src="WhatsApp Image 2025-11-10 at 12.43.58_106e3297" alt="Namrata Kapse">
+          <div class="member-name">Namrata Kapse</div>
+          <div class="member-role">Engineering Team Member</div>
+          <div class="member-bio">Assists students in preparing for technical exams with structured guidance and motivational support.</div>
+        </div>
+      </div>
+
+      <!-- Pharmacy Team -->
+      <h4 style="margin-top:30px;">Pharmacy Team</h4>
+      <div class="members-grid">
+        <div class="member-card">
+          <img class="member-photo" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=1200&auto=format&fit=crop" alt="Kranti Zine">
+          <div class="member-name">Kranti Deepak Zine</div>
+          <div class="member-role">Head of Pharmacy Department</div>
+          <div class="member-number"><a href="tel:+919373349579">📞 +91 93733 49579</a></div>
+          <div class="member-bio">Oversees pharmacy career guidance and exam preparation programs for students aspiring for success in pharma fields.</div>
+        </div>
+      </div>
+
+      <!-- Medical Team -->
+      <h4 style="margin-top:30px;">Medical Team</h4>
+      <div class="members-grid">
+        <div class="member-card">
+          <img class="member-photo" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop" alt="Shraddha Lande">
+          <div class="member-name">Shraddha Shivaji Lande</div>
+          <div class="member-role">Head of Medical Department</div>
+          <div class="member-number"><a href="tel:+917264030455">📞 +91 72640 30455</a></div>
+          <div class="member-bio">Provides personalized guidance for NEET and medical entrance exams, ensuring students stay focused and confident.</div>
+        </div>
+
+        <div class="member-card">
+          <img class="member-photo" src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?q=80&w=1200&auto=format&fit=crop" alt="Mohit Patil">
+          <div class="member-name">Mohit Patil</div>
+          <div class="member-role">Medical Team Lead</div>
+          <div class="member-number"><a href="tel:+919834681825">📞 +91 98346 81825</a></div>
+          <div class="member-bio">Focuses on conceptual clarity, test strategies, and doubt-solving for aspiring medical students.</div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="reach-us">
+      <h3>Location & Contact</h3>
+      <p class="address">E 70/28 MIDC Waluj, Ranjangaon Shenpunji, Waluj Aurangabad Division, 431136</p>
+      <p class="phone"><a href="tel:+919545394148">📞 +91 95453 94148</a></p>
+      <p class="email"><a href="mailto:info@counseling.example">📧 info@counseling.example</a></p>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=E%2070/28%20MIDC%20Waluj,%20Ranjangaon%20shenpunji,%20Waluj%20Aurangabad%20Division%20,431136&output=embed"
+                width="100%" height="280" style="border:0" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Counseling Website</p>
+  </footer>
+</body>
+</html>

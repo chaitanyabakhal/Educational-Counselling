@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Counseling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Counseling Website</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('members') }}">Our Members</a></li>
+                <li><a href="{{ url_for('feedback') }}">Feedback</a></li>
+                <li><a href="{{ url_for('contactus') }}">Contact Us</a></li>
+                <li><a href="{{ url_for('education') }}">Education Counselling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <h3>About Us</h3>
+            <div class="about-grid">
+                <div>
+                    <p>We provide compassionate, evidence-based education counseling tailored to students preparing for competitive exams and choosing career directions. Our mission is to unlock potential with clear planning and expert guidance.</p>
+                    <p>Our approach blends strategy, study planning, and motivation with data-backed methods to help learners thrive.</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop" alt="Counselor helping student" />
+                </div>
+            </div>
+        </section>
+
+        <section class="reach-us">
+            <h3>Location & Contact</h3>
+            <p class="address">E 70/28 MIDC Waluj, Ranjangaon shenpunji, Waluj Aurangabd Division ,431136</p>
+            <p class="phone"><a href="tel:+919545394148">+91 9545394148</a></p>
+            <p class="email"><a href="mailto:info@counseling.example">info@counseling.example</a></p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps?q=E%2070/28%20MIDC%20Waluj,%20Ranjangaon%20shenpunji,%20Waluj%20Aurangabd%20Division%20,431136&output=embed" width="100%" height="280" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Counseling Website</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counseling Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Counseling Website</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('members') }}">Our Members</a></li>
+                <li><a href="{{ url_for('feedback') }}">Feedback</a></li>
+                <li><a href="{{ url_for('contactus') }}">Contact Us</a></li>
+                <li><a href="{{ url_for('education') }}">Education Counselling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero hero-edu">
+            <div class="hero-content">
+                <h2>Education Counselling</h2>
+                <p>Choose the right path for your future. Expert guidance for JEE, NEET, MHT-CET, and GATE — plus career direction and study planning tailored to you.</p>
+                <a href="{{ url_for('feedback') }}" class="btn">Introduction Call</a>
+            </div>
+            <div class="hero-media">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="Student counseling"/>
+            </div>
+        </section>
+
+        <section class="services">
+            <h3>What Do I Teach?</h3>
+            <p>You deserve proper guidance to unlock your true potential. We focus on competitive exam preparation and education counseling to help students choose the right direction.</p>
+            <a href="{{ url_for('services') }}" class="btn">Explore Services</a>
+        </section>
+
+        <section class="about">
+            <h3>About</h3>
+            <p>Personalized, evidence-based counseling for students and families — combining strategy, planning, and motivation to achieve results.</p>
+        </section>
+
+        <section class="reach-us">
+            <h3>Location & Contact</h3>
+            <p class="address">E 70/28 MIDC Waluj, Ranjangaon shenpunji, Waluj Aurangabd Division ,431136</p>
+            <p class="phone"><a href="tel:+919545394148">+91 9545394148</a></p>
+            <p class="email"><a href="mailto:info@counseling.example">info@counseling.example</a></p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps?q=E%2070/28%20MIDC%20Waluj,%20Ranjangaon%20shenpunji,%20Waluj%20Aurangabd%20Division%20,431136&output=embed" width="100%" height="280" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Counseling Website</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

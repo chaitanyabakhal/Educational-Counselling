@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Counseling</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Counseling Website</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('members') }}">Our Members</a></li>
+                <li><a href="{{ url_for('feedback') }}">Feedback</a></li>                <li><a href="{{ url_for('contactus') }}">Contact Us</a></li>
+                <li><a href="{{ url_for('education') }}">Education Counselling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <h3>Competitive Exam Guidance</h3>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.5u47W1_xhhEmBmL_-RjntQHaHa?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=184&h=184&c=7&dpr=1.3&o=7&rm=3" alt="JEE Main">
+                    <h4>JEE Main/Advance</h4>
+                    <p>Strategy, subject-wise planning, and practice schedules to target IITs, NITs, and top engineering institutes.</p>
+                </div>
+                <div class="card">
+                    <img src="https://www.bing.com/th/id/OIP.qtBpwYxfT1XKhvBkjbDKCQAAAA?w=158&h=211&c=8&rs=1&qlt=90&o=6&cb=ucfimg1&dpr=1.3&pid=3.1&rm=2&ucfimg=1" alt="NEET">
+                    <h4>NEET</h4>
+                    <p>Guidance for Biology, Physics, Chemistry with revision trackers and mock analysis to reach MBBS/BDS goals.</p>
+                </div>
+                <div class="card">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.po6oN3vchqAy5_a4xcM7xwAAAA?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=184&h=194&c=7&dpr=1.3&o=7&rm=3" alt="MHT-CET">
+                    <h4>MHT-CET</h4>
+                    <p>Exam pattern navigation and score-boost plans aligned to Maharashtra CET requirements.</p>
+                </div>
+                <div class="card">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.BWO5NDtvrt4M7q7wePyJaAHaHP?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=184&h=179&c=7&dpr=1.3&o=7&rm=3" alt="GATE">
+                    <h4>GATE</h4>
+                    <p>Concept mastery, previous-year analysis, and smart revision pathways for GATE success.</p>
+                </div>
+            </div>
+        </section>
+        <section class="reach-us">
+            <h3>Location & Contact</h3>
+            <p class="address">E 70/28 MIDC Waluj, Ranjangaon shenpunji, Waluj Aurangabd Division ,431136</p>
+            <p class="phone"><a href="tel:+919545394148">+91 9545394148</a></p>
+            <p class="email"><a href="mailto:info@counseling.example">info@counseling.example</a></p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps?q=E%2070/28%20MIDC%20Waluj,%20Ranjangaon%20shenpunji,%20Waluj%20Aurangabd%20Division%20,431136&output=embed" width="100%" height="280" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Counseling Website</p>
+    </footer>
+</body>
+</html>
